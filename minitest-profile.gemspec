@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'minitest/profile_plugin'
+require 'minitest/profile/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "minitest-profile"
-  spec.version       = Minitest::ProfileReporter::VERSION
+  spec.version       = Minitest::Profile::VERSION
   spec.authors       = ["Nickolas Means"]
   spec.email         = ["nick@heliumsyndicate.com"]
   spec.description   = %q{Outputter to display the slowest tests in a minitest suite}
