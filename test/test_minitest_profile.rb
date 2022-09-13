@@ -5,9 +5,13 @@ require 'minitest/profile'
 
 describe 'a random smattering of tests' do
   50.times do |i|
-    it "will take #{i/1000.0}ms" do
+    it "will take #{i}ms" do
       sleep(i/1000.0)
       assert true
     end
+  end
+
+  it "will take 1.2s" do
+    sleep(1.2)
   end
 end
